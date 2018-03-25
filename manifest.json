@@ -1,0 +1,12 @@
+{
+  "name": "Remove Most Visited Pages",
+  "short_name": "RMVP",
+  "description": "Remove Most Visited Pages by redirecting the new tab page to Google homepage",
+  "author":"Christian Esperar",
+  "version": "1.0.0",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "blank.html"
+  },
+  "manifest_version": 2
+}
