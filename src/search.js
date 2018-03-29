@@ -11,7 +11,7 @@ const RMVP = {
    * @return Boolean
    */
   isHomepage() {
-    return ['/', 'webhp'].indexOf(window.location.pathname) !== 1;
+    return ['/', '/webhp'].indexOf(window.location.pathname) !== -1;
   },
 
   // Hide and show other element of the page once DOM contents are loaded
