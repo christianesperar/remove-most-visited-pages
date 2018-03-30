@@ -21,6 +21,9 @@ function build() {
   gulp.src('src/*.json')
     .pipe(jsonminify())
     .pipe(gulp.dest(DEST));
+
+  gulp.src('src/icons/*.png')
+    .pipe(gulp.dest(`${DEST}icons/`));
 }
 
 function watch() {
@@ -28,6 +31,7 @@ function watch() {
     'src/*.js',
     'src/*.html',
     'src/*.json',
+    'src/icons/*.png',
   ], [
     'build',
   ]);
