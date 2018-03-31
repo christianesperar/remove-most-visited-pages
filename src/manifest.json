@@ -8,7 +8,7 @@
     "128": "icons/128.png"
   },
   "author":"Christian Esperar",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "incognito": "split",
   "chrome_url_overrides": {
     "newtab": "blank.html"
