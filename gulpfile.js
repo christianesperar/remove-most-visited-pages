@@ -23,7 +23,7 @@ function build() {
     .pipe(jsonminify())
     .pipe(gulp.dest(dest));
 
-  gulp.src(`${src}icons*.png`)
+  gulp.src(`${src}icons/*.png`)
     .pipe(gulp.dest(`${dest}icons/`));
 }
 
