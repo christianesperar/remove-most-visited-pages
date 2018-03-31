@@ -211,8 +211,8 @@
         "*://www.google.co.zw/*",
         "*://www.google.cat/*"
       ],
-      "js": [
-        "search.js"
+      "css": [
+        "search.css"
       ],
       "run_at": "document_start"
     }

@@ -1,0 +1,14 @@
+/* Buttons */
+.hp .jsb {
+  display: none !important;
+}
+
+/* Suggestion links */
+.hp #prm-pt {
+  display: none !important;
+}
+
+/* Footer */
+.hp #footer {
+  display: none !important;
+}
