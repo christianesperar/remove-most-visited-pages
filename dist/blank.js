@@ -1,1 +1,1 @@
-window.location="https://www.google.com";
+"use strict";window.location="https://www.google.com";
