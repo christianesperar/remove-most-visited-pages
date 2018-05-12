@@ -4,8 +4,8 @@ const RMVP = {
    * @return Boolean
    */
   isHomepage: () =>
-    window.location.pathname === '/' || window.location.pathname.indexOf('webhp') === 1,
-
+    window.location.pathname === '/' ||
+    window.location.pathname.indexOf('webhp') === 1,
 
   /**
    * Transform search value into URL format
@@ -14,7 +14,7 @@ const RMVP = {
    */
   toUrl: (value) => {
     if (value.indexOf('//') === -1) {
-      value = `//${value}`;
+      return `//${value}`;
     }
 
     return value;
@@ -36,8 +36,10 @@ const RMVP = {
    * @return Boolean
    */
   onLoad: () => {
-    RMVP.html = document.getElementsByTagName('html')[0];
-    RMVP.search = document.getElementById('lst-ib');
+    [RMVP.html, RMVP.search] = [
+      document.getElementsByTagName('html')[0],
+      document.getElementById('lst-ib'),
+    ];
 
     console.log('RMVP loaded');
 
@@ -50,12 +52,12 @@ const RMVP = {
         if (RMVP.isUrl(searchValue)) {
           console.log('RMVP redirect');
 
-          RMVP.html.style.display = 'none';
-          window.location = searchValue;
-
           e.preventDefault();
           e.stopPropagation();
           e.stopImmediatePropagation();
+
+          RMVP.html.style.display = 'none';
+          window.location = searchValue;
 
           return false;
         }
@@ -64,7 +66,7 @@ const RMVP = {
       return true;
     }
 
-    RMVP.search.addEventListener('keyup', keyEvent);
+    RMVP.search.addEventListener('keydown', keyEvent);
   },
 };
 
