@@ -1181,12 +1181,16 @@ eslint@^4.19.1:
     table "4.0.2"
     text-table "~0.2.0"
 
-espree@^3.5.4:
+espree@^3.5.3, espree@^3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
   dependencies:
     acorn "^5.5.0"
     acorn-jsx "^3.0.0"
+
+esprima@^2.1:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
 esprima@^4.0.0:
   version "4.0.0"
@@ -1574,6 +1578,14 @@ gulp-jsonminify@^1.1.0:
     jsonminify "~0.2.3"
     plugin-error "^0.1.2"
     through2 "~0.6.5"
+
+gulp-strip-debug@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-strip-debug/-/gulp-strip-debug-3.0.0.tgz#4b6ec8cb68e6a7f16a43c2bf7d64704a7fb07d10"
+  dependencies:
+    plugin-error "^1.0.1"
+    strip-debug "^3.0.0"
+    through2 "^2.0.0"
 
 gulp-uglify@^3.0.0:
   version "3.0.0"
@@ -2802,6 +2814,46 @@ rimraf@^2.2.8:
   dependencies:
     glob "^7.0.5"
 
+rocambole-node-remove@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rocambole-node-remove/-/rocambole-node-remove-1.0.0.tgz#bd49b13dbe6122758374ffd247d8a739e821486f"
+  dependencies:
+    rocambole-token "^1.1.0"
+
+rocambole-node-update@^1.0.0, rocambole-node-update@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/rocambole-node-update/-/rocambole-node-update-1.0.2.tgz#5f1bdc629b5da3986a509d639133eb8c4cffe700"
+  dependencies:
+    rocambole-token "^1.2.1"
+
+rocambole-strip-alert@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rocambole-strip-alert/-/rocambole-strip-alert-1.0.0.tgz#3b255fe6f18d6301f805a14e570b1f1f2dba857f"
+  dependencies:
+    rocambole-node-update "^1.0.1"
+
+rocambole-strip-console@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rocambole-strip-console/-/rocambole-strip-console-1.0.0.tgz#2b97e3dfa6e19d4528ebe81a94231dc9e8aaca0b"
+  dependencies:
+    rocambole-node-update "^1.0.0"
+
+rocambole-strip-debugger@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/rocambole-strip-debugger/-/rocambole-strip-debugger-1.0.1.tgz#bd3e500de967a94228098c118d8a387fc4591bd8"
+  dependencies:
+    rocambole-node-remove "^1.0.0"
+
+rocambole-token@^1.1.0, rocambole-token@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/rocambole-token/-/rocambole-token-1.2.1.tgz#c785df7428dc3cb27ad7897047bd5238cc070d35"
+
+rocambole@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/rocambole/-/rocambole-0.7.0.tgz#f6c79505517dc42b6fb840842b8b953b0f968585"
+  dependencies:
+    esprima "^2.1"
+
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -3037,6 +3089,16 @@ strip-bom@^1.0.0:
 strip-bom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/strip-bom/-/strip-bom-3.0.0.tgz#2334c18e9c759f7bdd56fdef7e9ae3d588e68ed3"
+
+strip-debug@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/strip-debug/-/strip-debug-3.0.0.tgz#06333c42a8e80b06d74d6e8a1f96b46d724cf664"
+  dependencies:
+    espree "^3.5.3"
+    rocambole "^0.7.0"
+    rocambole-strip-alert "^1.0.0"
+    rocambole-strip-console "^1.0.0"
+    rocambole-strip-debugger "^1.0.0"
 
 strip-json-comments@~2.0.1:
   version "2.0.1"

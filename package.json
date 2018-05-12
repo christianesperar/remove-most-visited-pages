@@ -13,6 +13,7 @@
     "gulp-clean-css": "^3.9.3",
     "gulp-htmlmin": "^4.0.0",
     "gulp-jsonminify": "^1.1.0",
+    "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.0"
   }
 }
