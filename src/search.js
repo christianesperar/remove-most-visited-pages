@@ -66,7 +66,13 @@ const RMVP = {
       return true;
     }
 
-    RMVP.search.addEventListener('keydown', keyEvent);
+    // Get options set by the user
+    chrome.storage.sync.get(['RMVP_Options_UrlRedirection'], (result) => {
+      // Check if url redirection features is set
+      if ([undefined, true].indexOf(result.RMVP_Options_UrlRedirection) > -1) {
+        RMVP.search.addEventListener('keydown', keyEvent);
+      }
+    });
   },
 };
 
