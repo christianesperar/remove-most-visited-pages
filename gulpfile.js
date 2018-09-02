@@ -10,7 +10,7 @@ const dest = 'dist/';
 const src = 'src/';
 
 function build() {
-  gulp.src(`${src}*.js`)
+  gulp.src(`${src}**/*.js`)
     .pipe(babel({
       presets: ['es2015'],
     }))
@@ -18,24 +18,24 @@ function build() {
     .pipe(uglify())
     .pipe(gulp.dest(dest));
 
-  gulp.src(`${src}*.css`)
+  gulp.src(`${src}**/*.css`)
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest(dest));
 
-  gulp.src(`${src}*.html`)
+  gulp.src(`${src}**/*.html`)
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(dest));
 
-  gulp.src(`${src}*.json`)
+  gulp.src(`${src}**/*.json`)
     .pipe(jsonminify())
     .pipe(gulp.dest(dest));
 
-  gulp.src(`${src}icons/*.png`)
-    .pipe(gulp.dest(`${dest}icons/`));
+  gulp.src(`${src}**/*.png`)
+    .pipe(gulp.dest(dest));
 }
 
 function watch() {
-  gulp.watch([ `${src}*` ], [ 'build' ]);
+  gulp.watch([ `${src}**/*` ], [ 'build' ]);
 }
 
 gulp.task('build', build);

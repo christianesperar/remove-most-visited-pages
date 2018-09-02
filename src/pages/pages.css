@@ -1,0 +1,29 @@
+body {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.main,
+.sponsor {
+  float: left;
+}
+
+.main {
+  width: 85%;
+}
+
+.main__video {
+  margin-top: 15px;
+  border: none;
+}
+
+.sponsor {
+  position: fixed;
+  right: 10px;
+  width: 15%;
+}
+
+.sponsor__img {
+  width: 100%;
+}

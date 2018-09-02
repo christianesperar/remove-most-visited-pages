@@ -5,8 +5,8 @@ const RMVPOptions = {
    */
   onLoad: () => {
     [RMVPOptions.inputs, RMVPOptions.button] = [
-      document.getElementsByClassName('rvmp__checkbox'),
-      document.getElementById('rmvp__save'),
+      document.getElementsByClassName('options'),
+      document.getElementById('save'),
     ];
     // Go directly to the website if search query is url format
     const urlRedirection = RMVPOptions.inputs[0];
