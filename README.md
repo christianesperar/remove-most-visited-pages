@@ -1,4 +1,4 @@
-# Remove-Most-Visited-Pages
+# Remove Most Visited Pages
 Google Chrome extension that removes Most Visited Pages by redirecting the new tab page to Google homepage.
 
 ## Installation
