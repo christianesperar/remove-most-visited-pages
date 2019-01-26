@@ -1,5 +1,35 @@
+/* Search */
+.hp .RNNXgb {
+  background-color: #F1F3F4 !important;
+  border: none !important;
+  border-radius: 22px !important;
+  box-shadow: none !important;
+  outline: none !important;
+  opacity: 1 !important;
+  transition: background-color 300ms ease-in-out !important;
+  transition: opacity 200ms !important;
+}
+
+/* Keyboard */
+.hp .xPnqmf {
+  display: none !important;
+}
+
+.hp .aajZCb {
+  box-shadow: none !important;
+  border: 1px solid #00000033 !important;
+  border-top: none !important;
+  border-radius: 0px 0px 22px 22px !important
+}
+
+/* Autocomplete */
+.hp .UUbT9 {
+  padding: 0px 16px !important;
+}
+
 /* Buttons */
-.hp .jsb {
+.hp .jsb,
+.hp .FPdoLc {
   display: none !important;
 }
 
