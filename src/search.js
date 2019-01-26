@@ -37,8 +37,8 @@ const RMVP = {
    */
   onLoad: () => {
     [RMVP.html, RMVP.search] = [
-      document.getElementsByTagName('html')[0],
-      document.getElementById('lst-ib'),
+      document.querySelector('html'),
+      document.querySelector('input[name="q"]'),
     ];
 
     console.log('RMVP loaded');
