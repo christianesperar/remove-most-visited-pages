@@ -1,5 +1,7 @@
 /* Search */
 .hp .RNNXgb {
+  position: relative !important;;
+  z-index: 1 !important;;
   background-color: #F1F3F4 !important;
   border: none !important;
   border-radius: 22px !important;
@@ -16,20 +18,31 @@
 }
 
 .hp .aajZCb {
+  padding: 22px 0 !important;
+  background: #f1f3f4 !important;
   box-shadow: none !important;
-  border: 1px solid #00000033 !important;
-  border-top: none !important;
-  border-radius: 0px 0px 22px 22px !important
+  border: none !important;
+  border-radius: 0px 0px 22px 22px !important;
 }
 
 /* Autocomplete */
 .hp .UUbT9 {
-  padding: 0px 16px !important;
+  margin-top: -22px !important;
+  padding: 0px !important;
+  z-index: 0 !important;
+}
+
+.hp .sbhl {
+  background: #dee3e5 !important;
 }
 
 /* Buttons */
 .hp .jsb,
 .hp .FPdoLc {
+  display: none !important;
+}
+
+.hp .VlcLAe {
   display: none !important;
 }
 
